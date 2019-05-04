@@ -3,20 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html,body{
+    height: 100%;
+}
 body{
+    position: relative;
     font-size: 12px;
     line-height: 1.2;
     background-color: #fff;
 }
-
 main{
     height: calc(100vh - 50px);
-    background: blue;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 footer{
     position: absolute;
     height: 50px;
     width: 100%;
-    background: red;
+    display: flex;
+    border-top: 1px solid #ccc;
 }
+footer>div{
+    flex: 1;
+    text-align: center;
+}
+footer .active{
+    color: #ff5722;
+}
+footer>div>span{
+    display: block;
+    padding-top: 5px;
+}
+111111111111111111111111
