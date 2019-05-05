@@ -17,6 +17,12 @@ main{
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
 }
+main>section{
+    display: none;
+}
+main>section:first-child{
+    display: block;
+}
 footer{
     position: absolute;
     height: 50px;
